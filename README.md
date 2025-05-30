@@ -10,6 +10,8 @@
 
 ## 🖊   说明
 
+**Unity制作开发版本：6000.0.45f1**
+
 **相信看到该项目名称的人应该都能够可以理解该项目为Maple Leaf的开源仓库版本也就是所谓的源码了，在这里我就不做过多赘述了，目前开源的版本为最新版V1.2.1,各位有兴趣的话可以进行下载更改发布适合自己的版本。**
 
 **作者个人所维护的后端数据获取仓库为:【[https://github.com/LPHYSQS/Maple-Leaf](https://github.com/LPHYSQS/Maple-Leaf)】**
@@ -27,6 +29,10 @@ Maple Leaf是一款由Unity制作的“自由软件部署”软件，你看到�
 关于制作如果你问我为什么选择Unity制作，原因就是我对其他的UI框架并不是十分熟悉（包括WPF【C#】，本软件的更新程序是由WPF【C#】编写的）,其实你如果有兴趣的话，可以自己搭建一个资源占用较少的UI进行驱动。
 
 UI界面的Unity源码我会进行开源，但目前有部分代码需要进行优化（其实就是一些速度提升的问题😥，尤其是对于无法正常访问GitHub的用户的网络原因【依赖于对数据的获取】）
+
+**软件内部预览：**
+
+![](https://github.com/LPHYSQS/Maple-Leaf/blob/main/ImageData/SoftwareInterface.png?raw=true)
 
 ## ✌️ 关于更新
 
