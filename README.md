@@ -36,8 +36,11 @@ UI界面的Unity源码我会进行开源，但目前有部分代码需要进行�
 
 ## ✌️ 关于更新
 
-1. 对于“远程获取”软件资源不出意外的话我会在每个月的1号与15号进行资源更新。关于有些网址无法打开的问题，你可以通过软件中的网盘按钮进行软件下载。
+1. ~~对于“远程获取”软件资源不出意外的话我会在每个月的1号与15号进行资源更新。~~关于有些网址无法打开的问题，你可以通过软件中的网盘按钮进行软件下载。
+
 2. 软件更新（其实就是UI界面更新），除非存在必要更新才会推送更新的。
+
+   **注：目前除非有特别必要原因会进行软件UI以及根本功能性更新，否则不再推出更新，关于软件仓库维护（远程获取更新软件列表内容）将不再提供资源更新，目前已将配置文件更改功能开放给了用户，可以通过内置编辑器进行相应配置文件json进行更改，其中内置可以使用文件编辑器包括了Python独立开发者内容编辑器以及“*notepad 3*”文本编辑器。**
 
 ## 🖥 支持的操作系统
 
@@ -91,7 +94,47 @@ json示例：
  }
 ```
 
+## 😘第三方插件与依赖项
 
+### 1. DOTween
+- **类型**：动画插件  
+- **功能**：高性能的补间动画引擎，用于创建平滑的动画效果  
+- **用途**：  
+  - 对象移动/旋转/缩放动画  
+  - UI元素动画（弹窗、进度条等）  
+  - 颜色/材质属性过渡  
+- **安装方式**：  
+  - [Asset Store下载](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676)
+  - 或使用 [GitHub Package Manager](https://github.com/Demigiant/dotween)  
+- **文档**：[DOTween文档](http://dotween.demigiant.com/documentation.php)
+
+### 2. UnityMainThreadDispatcher
+- **类型**：线程管理工具  
+- **功能**：在多线程环境中安全执行Unity主线程任务  
+- **用途**：  
+  - 网络请求回调处理  
+  - 异步操作后更新UI  
+  - 线程安全调用Unity API  
+- **安装方式**：  
+  - [GitHub仓库](https://github.com/PimDeWitte/UnityMainThreadDispatcher)  
+  - 直接导入 `UnityMainThreadDispatcher-master` 到项目  
+- **基础用法**：
+  ```csharp
+  // 在子线程中提交任务到主线程
+  UnityMainThreadDispatcher.Instance().Enqueue(() => {
+      // 此处执行Unity主线程操作
+      gameObject.SetActive(true);
+  });
+
+​	
+
+### 3. Notepad3
+- **类型**：外部开发工具  
+- **功能**：轻量级代码/文本编辑器  
+- **用途**：  
+  - 快速编辑配置文件(.json/.xml)  
+- **获取方式**：  
+  - [官网下载](https://www.rizonesoft.com/downloads/notepad3/)  
 
 ## 🫠 关于作者
 
@@ -99,7 +142,5 @@ json示例：
 
 作者B站主页：https://space.bilibili.com/356837669?spm_id_from=333.337.0.0
 
-作者GitHub仓库：https://github.com/LPHYSQS/Maple-Leaf
-
-**（注：作者个人查找整理软件的速度有限，欢迎各位投稿优秀实用的软件）**
+作者GitHub仓库：[LPHYSQS (已逝情殇)](https://github.com/LPHYSQS)
 
